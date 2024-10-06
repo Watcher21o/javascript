@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive JavaScript Operations with Chart</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        #myChart {
+            max-width: 600px;
+            max-height: 400px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Operations with User Interaction and Chart</h1>
+
+    <!-- Input fields for numbers -->
+    <label for="num1">Enter first number:</label>
+    <input type="number" id="num1" value="10"><br><br>
+
+    <label for="num2">Enter second number:</label>
+    <input type="number" id="num2" value="5"><br><br>
+
+    <!-- Buttons to perform operations -->
+    <button id="addButton">Add</button>
+    <button id="subtractButton">Subtract</button>
+    <button id="multiplyButton">Multiply</button>
+    <button id="divideButton">Divide</button><br><br>
+
+    <!-- Button to toggle visibility -->
+    <button id="toggleButton">Hide Results</button>
+
+    <!-- Result output -->
+    <div id="result">Result will be displayed here...</div>
+
+    <!-- Canvas for Chart.js -->
+    <canvas id="myChart"></canvas>
+
+    <!-- Load Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Link the external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
+
